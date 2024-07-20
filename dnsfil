@@ -78,6 +78,7 @@ start() {
 }
 
 stop() {
+  download
   log_msg "stop dnsfil service"
   clean
   restart_dnsmasq
