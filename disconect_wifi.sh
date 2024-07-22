@@ -1,6 +1,6 @@
 #!/bin/sh
 
-THRESHOLD=-60
+THRESHOLD=-65
 
 for station in $(iw dev phy1-ap0 station dump | grep Station | awk '{print $2}'); do
     signal=$(iw dev phy1-ap0 station get $station | grep signal: | awk '{print $2}')
